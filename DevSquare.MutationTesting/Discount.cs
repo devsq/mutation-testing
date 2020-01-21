@@ -1,16 +1,16 @@
 ﻿namespace DevSquare.MutationTesting
 {
-    public class DiscountCalculator
+    public class Discount
     {
-        private const decimal Discount = 0.1m;
+        private const decimal DiscountPercentage = 0.1m;
 
         public decimal ApplyDiscount(decimal total)
         {
             var totalWithDiscount = total;
 
-            if (total > 500)
+            if (total >= 500)
             {
-                totalWithDiscount = totalWithDiscount - (totalWithDiscount * Discount);
+                totalWithDiscount = totalWithDiscount - (totalWithDiscount * DiscountPercentage);
             }
 
             return totalWithDiscount;
