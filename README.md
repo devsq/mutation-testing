@@ -8,5 +8,5 @@ dotnet tool install -g dotnet-stryker
 ### navigate to the root of test folder
 cd DevSquare.MutationTesting.Tests
 
-### run striker with html report and progress
+### run stryker with html report and progress
 dotnet stryker --reporters "['html', 'progress']"
